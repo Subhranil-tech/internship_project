@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    
+</head>
+<body>
+    <h3 align="center">ADMISSION FORM</h3>
+    <!-------------IMAGE FILE------------>
+    <p style="text-align:center;"><img src="R.png" width="100" length="100" class="center"></p>
+
+    <table align="center" cellpadding="12">
+
+        <!----------------PERSONAL DETAILS------------>
+        <tr>
+            <td>NAME</td>
+            <td><input type="text" name="" maxlength="20"></td>
+            
+        </tr>
+        <!--CALENDAR-->
+        <tr>
+            <td>DATE OF BIRTH</td>
+             <td><input type="date" name="mydate"></td>
+        </tr>
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td><input type="number" name="Mobile_Number" maxlength="10" />
+            
+            </td>
+        </tr>
+        <!--RADIO BUTTTON USED HERE-->
+        <tr>
+            <td>GENDER</td>
+            <td>
+            Male <input type="radio" name="Gender" value="Male" />
+            Female <input type="radio" name="Gender" value="Female" />
+            </td>
+        </tr>
+        <!-----------------ADDRESS AND LOCATION DETAILS------------------->
+        <tr>
+            <td>ADDRESS <br /><br /><br /></td>
+            <td><textarea name="Address"></textarea></td>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" name="City" maxlength="30" /></td>
+        </tr>
+        <tr>
+            <td>PIN CODE</td>
+            <td><input type="text" name="PinCode" maxlength="6" />
+            
+            </td>
+        </tr>
+        <tr>
+            <td>STATE</td>
+            <td><input type="text" name="State" maxlength="30" />
+            
+            </td>
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td><input type="text" name="Country" value="India"></td>
+        </tr>
+        <!-------------ACHIEVENTS--------------->
+    
+        <tr>
+            <td>SPORTS<br><br><br></td>
+
+            <!--CHECKBOX USED HERE-->
+            <td>FOOTBALL<input type="checkbox" name="football" value="football">
+                BASKETBALL<input type="checkbox" name="basketball" value="basketball">
+                CRICKET<input type="checkbox" name="cricket" value="cricket">
+                <br />
+                Others
+                <input type="checkbox" name="Other" value="Other">
+                <input type="text" name="Other" maxlength="30" />
+            </td>
+        </tr>
+        <!---------------COURSES--------------->
+        <!--SELECT option Button-->
+        <tr>
+            <td>COURSE ENROLLED</td>
+            <td><select>
+                <option value="technology">B.Tech</option>
+                <option value="commerce" selected>B.Com</option>
+                <option value="science">B.Sc</option>
+                <option value="Pharma">B.Pharma</option>
+                <option value="ID">B.Sc-Interior Design</option>
+                <option value="BCA">BCA</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
